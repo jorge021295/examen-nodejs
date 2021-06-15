@@ -12,7 +12,7 @@ export class MovieRoutes {
             this.movie_controller.create_movie(req, res);
         });
 
-        app.get('/api/movie/:id', [auth], (req: Request, res: Response) => {
+        app.get('/api/movie/:name', [auth], (req: Request, res: Response) => {
             this.movie_controller.get_movie(req, res);
         });
 
